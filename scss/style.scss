@@ -1,0 +1,27 @@
+
+@use  './custom';
+
+
+//Import components
+@use './component/image';
+@use './component/animation';
+@use  './component/button';
+@use './component/mixin';
+@use  './component/typography';
+
+
+//Import components
+@use './sections/company';
+@use  './sections/intro-section';
+@use './sections/navbar';
+@use './sections/services.scss';
+@use './sections/testimonial.scss';
+@use './sections/portfolio';
+@use './sections/get-start.scss';
+@use './sections/footer.scss';
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
