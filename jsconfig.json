@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/bscss/*":["node_modules/bootstrap/scss/*"]
+        }
+    }
+}

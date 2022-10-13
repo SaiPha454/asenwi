@@ -1,0 +1,40 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+
+.get-started{
+    padding: 4rem 0;
+    background-color: $gray-200;
+}
+
+.gradient{
+    @include bg-linear-gridient();
+}
+
+.cta-info{
+    padding: 3rem;
+    margin: 1rem 0;
+    display: block;
+    
+    &__list{
+        position: relative;
+        list-style: none;
+        li::before{
+            font-family: "Font Awesome 6 Free";
+            content: "\f00c";
+            font-weight:bolder;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.form{
+    padding: 3rem;
+
+    button{
+        border: none;
+        text-transform: capitalize;
+    }
+}
+

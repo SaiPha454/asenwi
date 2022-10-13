@@ -1,0 +1,54 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+.portfolio {
+    padding: 4rem 0;
+    &-box{
+        position: relative;
+        width: 100%;
+        height: 18.5rem;
+        //max-height: 18.5rem;
+        overflow: hidden;
+        margin-bottom: 1.2rem;
+        @include bg-linear-gridient();
+        padding-top: 0.25rem;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1s;
+        }
+        &:hover{
+            .portfolio-info{
+                opacity: 1;
+                visibility: visible;
+                @include transitionAll();
+            }
+            img{
+                transform: scale(2);
+            }
+            
+        }
+    }
+    &-info{
+        background-color: rgba($color: $primary, $alpha: 0.75);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        .caption{
+            color: white;
+            @include absCenter();
+
+            h4{
+                text-transform: uppercase;
+            }
+        }
+
+    }
+
+
+}
+

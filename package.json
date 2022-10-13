@@ -1,0 +1,33 @@
+{
+  "name": "nx-sass",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "compile:sass": "sass --watch scss:styles/css --load-path=node_modules/",
+    "purge:css": "purgecss --css styles/css/style.css --content components/*.js --output styles/css/dist --config postcss.config.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.12",
+    "bootstrap": "^5.2.1",
+    "bootstrap-icons": "^1.9.1",
+    "mongodb": "^4.10.0",
+    "next": "12.3.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.8.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.55.0",
+    "sharp": "^0.31.0"
+  },
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1",
+    "purgecss": "^5.0.0"
+  }
+}

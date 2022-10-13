@@ -1,0 +1,61 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+.testimonials {
+    position: relatives;
+    padding: 0;
+    @include bg-linear-gridient();
+
+    &__card{
+        
+        background-color: rgba($color: white, $alpha: 0.8);
+        padding: 2rem 1.25rem;
+        border-radius: 0.5rem;
+        height: auto;
+        i{
+            font-size: 1.5rem;
+            color: rgba($color: $primary, $alpha: 0.5);
+        }
+
+        span {
+            display: block;
+        }
+        .ratings{
+            i {
+                font-size: 1rem;
+                color: rgba($color: $primary, $alpha: 0.9);
+                padding: 0.3rem;
+            }
+        }
+
+    }
+    &__picture {
+        position: absolute;
+        width: 6rem;
+        height: 6rem;
+        left: 50%;
+        transform: translate(-50%,-40%);
+        
+        &--client {
+            border: 0.325rem solid rgba($color: $primary, $alpha: 0.7)!important;
+            // border-radius: 50%;
+        }
+
+    }
+
+    &__name{
+        padding-top: 3rem;
+        margin-top: 1rem;
+        color: white;
+        font-weight: 500;
+        h3{
+            text-transform: capitalize;
+        }
+        p{
+            padding: 0.4rem 0;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,43 @@
+@use '../custom' as *;
+.services{
+    padding: 1rem 0;
+    
+
+    &_content{
+        padding: 1rem;
+        margin-top: 0;
+        p{
+            font-size: 0.9rem;
+            @include media-breakpoint-up(lg){
+                font-size: 1.2rem;
+            }
+
+        }
+
+        @include media-breakpoint-up(lg){
+            margin-top: 5rem;
+        }
+        
+        .icon{
+            font-size: 1.5rem;
+            color: $primary;
+            @include media-breakpoint-up(lg){
+                font-size: 2.5rem;
+            }
+        }
+    }
+    &_pic{
+        max-width: 100%;
+        width: 100%!important;
+       
+    }
+}
+.services_pic-container{
+    @include media-breakpoint-down(sm){
+        margin-top: 0.1rem!important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
